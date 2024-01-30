@@ -1,0 +1,21 @@
+{
+    "queryValues": [
+        "rzeczoznawca budowlany",
+        "ekspertyza budowlana",
+        "ekspertyzy budowlane",
+        "Rzeczoznawca budowlany Warszawa",
+        "Rzeczoznawca budowlany Wrocław",
+        "Rzeczoznawca budowlany Gdańsk",
+        "Rzeczoznawca budowlany Szczecin",
+        "Rzeczoznawca budowlany Kraków",
+        "Rzeczoznawca budowlany Poznań"
+    ],
+    "myDomains": [
+        "stawiarski.pl",
+        "stawiarski.com.pl",
+        "opiniesadowe.pl",
+        "bieglyrzeczoznawca.pl"
+    ],
+    "siteUrlForSiteSearch": "stawiarski.pl",
+    "closeTime": 1200000
+  }

@@ -1,0 +1,29 @@
+{
+  "name": "thls-base-seo",
+  "version": "1.0.0",
+  "description": "This program monitor other seo programs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build-win": "pkg index.js --target node18-win-x64  --out-path ./build --public  --config ./package.json",
+    "updatex": "npm version patch",
+    "updatexx": "npm version minor",
+    "updatexxx": "npm version major"
+  },
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "assets": "node_modules/**/*.*"
+
+  },
+  "author": "TheLoloS",
+  "license": "ISC",
+  "devDependencies": {
+    "node-key-sender": "^1.0.11"
+  },
+  "dependencies": {
+    "tree-kill": "^1.2.2"
+  }
+}
