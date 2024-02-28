@@ -17,5 +17,11 @@
         "bieglyrzeczoznawca.pl"
     ],
     "siteUrlForSiteSearch": "stawiarski.pl",
+    "programs": [
+        ".\\sub_programs\\thls-seo.exe",
+	".\\sub_programs\\thls-seoWU.exe",
+	".\\sub_programs\\thls-seo-frazy-urban.exe",
+	".\\sub_programs\\thls-seo-frazy-urbanWU.exe"
+    ],
     "closeTime": 1200000
   }
