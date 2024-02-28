@@ -1,19 +1,18 @@
+const fs = require('fs');
 const kill = require('tree-kill');
 const ks = require('node-key-sender');
 // get current path
 const path = require('path');
 const { spawn } = require('node:child_process'); 
-const config = require('./config.json');
+const configPath = path.join(process.cwd(), 'config.json');
+console.log(configPath);
+
+// Odczyt pliku "config.json"
+const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 // get time from config
 const time = config.closeTime;
 
-// Tablica z ścieżkami do programów
-const programs = [
-	".\\sub_programs\\thls-seo.exe",
-	".\\sub_programs\\thls-seoWU.exe",
-	".\\sub_programs\\thls-seo-frazy-urban.exe",
-	".\\sub_programs\\thls-seo-frazy-urbanWU.exe",
-];
+const programs = config.programs;
 const vpn = path.join(process.cwd(),"vpn","Vpn.exe");
 
 // Uruchomienie VPN
